@@ -1,0 +1,164 @@
+[
+  {
+    "objectID": "week1_notes.html",
+    "href": "week1_notes.html",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "",
+    "text": "On the first day of the week, I attended a presentation about the general outline of the project we will be undertaking and information about the team (Team C, client, project scope, timeline). The next day, I met with the team, CEO, CTO, and other members. Later that day, it was determined which team I would be working on and with whom. Within the team, I took on the roles of Data Scientist and Data Analyst; in the following weeks, I also took on the roles of Scrum Master and Product Owner. I hope to better learn the Scrum methodology by applying my theoretical knowledge in practice.",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "week1_notes.html#overview",
+    "href": "week1_notes.html#overview",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "",
+    "text": "On the first day of the week, I attended a presentation about the general outline of the project we will be undertaking and information about the team (Team C, client, project scope, timeline). The next day, I met with the team, CEO, CTO, and other members. Later that day, it was determined which team I would be working on and with whom. Within the team, I took on the roles of Data Scientist and Data Analyst; in the following weeks, I also took on the roles of Scrum Master and Product Owner. I hope to better learn the Scrum methodology by applying my theoretical knowledge in practice.",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "week1_notes.html#device-setup-and-findings",
+    "href": "week1_notes.html#device-setup-and-findings",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "Device Setup and Findings",
+    "text": "Device Setup and Findings\nDuring the week, the ECG device required to carry out the project was procured. After receiving the device, I tested it on myself to examine how it worked and how it recorded data. I also read the device’s user manual and verbally shared the information that we could only retrieve data from the device in PDF and SCP formats with my other team members during a meeting. Subsequently, my team members in the Capteur team obtained the technical documentation for the device by contacting the CTO.\nUser Manual Link: D-Heart User Manual\nDuring the process of extracting data from the device, my colleague, who is a Data Scientist, discovered that we could connect to the device via Bluetooth using the bleak Python library. At this point, I thoroughly reviewed the technical documentation (D-HEART Bluetooth LE Protocol Description) and analyzed the format in which the data was transmitted via BLE (Bluetooth Low Energy).\n\n\n\nExample of Data Extracted from Device\n\n\nBased on the technical data at hand and the basic connection structure created by my colleague, I prepared a comprehensive script with LLM support. By running this script, I successfully transferred the raw data to the Python environment; this work allowed us to exceed the 60-second recording limit specified in the user guide, significantly increasing our data depth for future analyses. Although this task was not directly part of my job description, I chose to engage in this technical process to better understand the analysis process and save time.",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "week1_notes.html#research-collaboration",
+    "href": "week1_notes.html#research-collaboration",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "Research & Collaboration",
+    "text": "Research & Collaboration\n\nECG Signal Processing\nI also researched how ECG signals are obtained and the signal processing stages. During my research, I found a PDF copy of the book titled “ECG Signal Processing, Classification and Interpretation” published by Springer and started reading it. You can access the notes I took during my reading and later shared with my team members here: Typst Project In addition to all this, I reviewed the device’s user manual and shared its features for recording ECG signals with my team members via the Discord channel we use for communication.\n\n\n\nECG Device Characteristics\n\n\n\n\nClient Presentation & Clinical Insights\nMy colleague Loïc and I worked on the section about us for the presentation to the client. Based on my experience as a healthcare professional in my previous career and my current research, I shared with him the clinical information on what diagnoses can be obtained by analyzing ECG signals. We synthesized this technical and medical information and added it to the client presentation.",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "week1_notes.html#what-skills-does-this-demonstrate",
+    "href": "week1_notes.html#what-skills-does-this-demonstrate",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "What skills does this demonstrate?",
+    "text": "What skills does this demonstrate?\nThe activities I completed this week match the following engineering competencies:\n\nData & Computer Science Engineering Competencies\n\nTechnical Proficiency: I analyzed the device’s technical protocol (D-HEART BLE Protocol). Using an LLM, I developed a Python script to extract raw data from the device.\nToolchain Utilization: I used Quarto and Typst for my portfolio and documentation. This helped me connect my code with my written reports effectively.\nResearch & Critical Thinking: I analyzed the user manual and found some limits, such as the 60-second recording limit. I designed a technical solution (using BLE raw data) to bypass these limits.\n\n\n\nProfessional Skills (Soft Skills)\n\nClinical Insight Integration: I used my past experience as a healthcare professional to analyze ECG signals. Together with my teammate Loïc, we added medical details to the client presentation.\nCollaboration & Support: My teammate (Data Scientist) found the bleak library. I improved his code to analyze the data format and helped the team access the data more easily.\nComprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.\n\nMethodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "week1_notes.html#weekly-question",
+    "href": "week1_notes.html#weekly-question",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "Weekly Question",
+    "text": "Weekly Question\n\nIs it really important to read the device’s user manual?\nWhy did you deal with technical documents and script writing even though it wasn’t part of your job description?\nHow was the collaborative environment established?",
+    "crumbs": [
+      "Week 1 Notes"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "304.2 Medical Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my project documentation for the 304.2 Medical Data Science course. This portfolio tracks my progress, assignments, and analysis throughout the whole project.\n\n\n\n\n\n\nTip\n\n\n\nYou can sort the tables below by clicking on the column headers.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "304.2 Medical Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my project documentation for the 304.2 Medical Data Science course. This portfolio tracks my progress, assignments, and analysis throughout the whole project.\n\n\n\n\n\n\nTip\n\n\n\nYou can sort the tables below by clicking on the column headers.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#the-different-portfolios",
+    "href": "index.html#the-different-portfolios",
+    "title": "304.2 Medical Data Science Portfolio",
+    "section": "The different portfolios",
+    "text": "The different portfolios",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html",
+    "href": "01_introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This section outlines the primary goals of my work in Medical Data Science.\n\nAnalyze medical datasets.\nApply machine learning techniques.\nDocument findings and visualisations.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#project-goals",
+    "href": "01_introduction.html#project-goals",
+    "title": "Introduction",
+    "section": "",
+    "text": "This section outlines the primary goals of my work in Medical Data Science.\n\nAnalyze medical datasets.\nApply machine learning techniques.\nDocument findings and visualisations.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_introduction.html#tools-used",
+    "href": "01_introduction.html#tools-used",
+    "title": "Introduction",
+    "section": "Tools Used",
+    "text": "Tools Used\n\nPython: Data analysis and modeling.\nQuarto: Documentation and publishing.\nGitHub: Version control and hosting.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "INSTRUCTIONS.html",
+    "href": "INSTRUCTIONS.html",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Follow these steps in your terminal to verify and deploy your portfolio.\n\n\nStart by verifying your Quarto installation:\nquarto check\nIf this command runs without errors (prints “OK”), proceed to the next step.\n\n\n\nPreview the site locally to ensure it builds correctly:\nquarto preview\nThis should launch a browser window showing your site. Press Ctrl+C in the terminal to stop the server when done.\n\n\n\nCheck your remote repository connection:\ngit remote -v\nYou should see an output starting with origin. If the output is empty or incorrect, add the remote manually (replace with your actual repo URL if different):\ngit remote add origin https://github.com/UnalKulekci/304.2_MedInf_Portfolio.git\n\n\n\nSave your current work to git:\ngit add .\ngit commit -m \"Initial portfolio setup\"\n\n\n\nFinally, publish your site:\nquarto publish gh-pages\nThis command will build your site and push it to the gh-pages branch on GitHub."
+  },
+  {
+    "objectID": "INSTRUCTIONS.html#check-installation",
+    "href": "INSTRUCTIONS.html#check-installation",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Start by verifying your Quarto installation:\nquarto check\nIf this command runs without errors (prints “OK”), proceed to the next step."
+  },
+  {
+    "objectID": "INSTRUCTIONS.html#local-preview",
+    "href": "INSTRUCTIONS.html#local-preview",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Preview the site locally to ensure it builds correctly:\nquarto preview\nThis should launch a browser window showing your site. Press Ctrl+C in the terminal to stop the server when done."
+  },
+  {
+    "objectID": "INSTRUCTIONS.html#verify-git-configuration",
+    "href": "INSTRUCTIONS.html#verify-git-configuration",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Check your remote repository connection:\ngit remote -v\nYou should see an output starting with origin. If the output is empty or incorrect, add the remote manually (replace with your actual repo URL if different):\ngit remote add origin https://github.com/UnalKulekci/304.2_MedInf_Portfolio.git"
+  },
+  {
+    "objectID": "INSTRUCTIONS.html#commit-changes",
+    "href": "INSTRUCTIONS.html#commit-changes",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Save your current work to git:\ngit add .\ngit commit -m \"Initial portfolio setup\""
+  },
+  {
+    "objectID": "INSTRUCTIONS.html#deploy-to-github-pages",
+    "href": "INSTRUCTIONS.html#deploy-to-github-pages",
+    "title": "Manual Setup and Deployment Instructions",
+    "section": "",
+    "text": "Finally, publish your site:\nquarto publish gh-pages\nThis command will build your site and push it to the gh-pages branch on GitHub."
+  }
+]
