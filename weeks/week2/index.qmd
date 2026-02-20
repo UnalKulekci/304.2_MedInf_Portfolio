@@ -1,0 +1,27 @@
+---
+title: "Week 2: [Title]"
+date: 2026-02-27
+description: "Summary of Week 2 activities."
+categories: [Week 2]
+---
+
+## Overview
+
+
+
+## Key Activities
+
+
+
+## What skills does this demonstrate?
+
+### Data & Computer Science Engineering Competencies
+
+
+
+### Professional Skills (Soft Skills)
+
+
+
+## Weekly Question
+

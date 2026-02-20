@@ -4,24 +4,46 @@ project:
 
 website:
   title: "304.2 MedInf Portfolio"
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
+  navbar:
+    background: "#1a1a2e"
+    foreground: "#e0e0e0"
+    left:
       - href: index.qmd
         text: Home
       - href: 01_introduction.qmd
         text: Introduction
-      - href: week1_notes.qmd
-        text: Week 1 Notes
-  page-footer:
-    left: "Copyright 2026, Unal Kulekci"
-    right: 
+    right:
       - icon: github
         href: https://github.com/UnalKulekci
-  
+        aria-label: GitHub
+  sidebar:
+    - title: "Weekly Reports"
+      style: "floating"
+      search: true
+      contents:
+        - section: "Weeks"
+          contents:
+            - href: weeks/week1/index.qmd
+              text: "Week 1"
+            - href: weeks/week2/index.qmd
+              text: "Week 2"
+  page-footer:
+    border: true
+    background: "#1a1a2e"
+    foreground: "#e0e0e0"
+    left: "© 2026 Unal Kulekci"
+    right:
+      - icon: github
+        href: https://github.com/UnalKulekci
+
 format:
   html:
-    theme: cosmo
+    theme:
+      dark: darkly
+      light: flatly
     css: styles.css
     toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
