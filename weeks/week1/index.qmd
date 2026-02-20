@@ -60,13 +60,13 @@ The activities I completed this week match the following engineering competencie
 
 ## Reflections
 
-What worked: We successfully bypassed the device's technical limits and established a clear workflow using Jira and Discord.
+- What worked: We successfully bypassed the device's technical limits and established a clear workflow using Jira and Discord.
 
-What failed / Challenges: We are experiencing some time loss due to technical uncertainties. I couldn't find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.
+- What failed / Challenges: We are experiencing some time loss due to technical uncertainties. I couldn't find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.
 
-What I learned: I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.
+- What I learned: I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.
 
-What to improve: We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.
+- What to improve: We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.
 
 
 ## Weekly Question
