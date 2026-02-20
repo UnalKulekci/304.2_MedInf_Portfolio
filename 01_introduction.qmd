@@ -1,0 +1,17 @@
+---
+title: "Introduction"
+---
+
+## Project Goals
+
+This section outlines the primary goals of my work in Medical Data Science.
+
+1.  Analyze medical datasets.
+2.  Apply machine learning techniques.
+3.  Document findings and visualisations.
+
+## Tools Used
+
+-   **Python**: Data analysis and modeling.
+-   **Quarto**: Documentation and publishing.
+-   **GitHub**: Version control and hosting.

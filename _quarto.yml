@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "304.2 MedInf Portfolio"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: 01_introduction.qmd
+        text: Introduction
+      - href: week1_notes.qmd
+        text: Week 1 Notes
+  page-footer:
+    left: "Copyright 2026, Unal Kulekci"
+    right: 
+      - icon: github
+        href: https://github.com/UnalKulekci
+  
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
