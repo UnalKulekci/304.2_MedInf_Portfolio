@@ -8,73 +8,112 @@ categories: [Meeting, Setup, ECG]
 ## Overview
 
 On the first day of the week, I attended a presentation about the general outline of the project we will be undertaking and information about the team (Team C, client, project scope, timeline). The next day, I met with the team, CEO, CTO, and other members.
+
 Later that day, it was determined which team I would be working on and with whom. Within the team, I took on the roles of **Data Scientist** and **Data Analyst**; in the following weeks, I also took on the roles of **Scrum Master** and **Product Owner**. I hope to better learn the Scrum methodology by applying my theoretical knowledge in practice.
 
 
 ## Device Setup and Findings
+
 During the week, the **ECG device** required to carry out the project was procured. After receiving the device, I tested it on myself to examine how it worked and how it recorded data.
+
 I also read the device's user manual and verbally shared the information that we could only retrieve data from the device in PDF and SCP formats with my other team members during a meeting. Subsequently, my team members in the **Capteur** team obtained the technical documentation for the device by contacting the CTO.
 
-User Manual Link: [D-Heart User Manual](https://www.intermedical.co.uk/wp-content/uploads/2020/08/d-heart_usermanual.pdf)
+::: {.callout-note}
+## Useful Resource
+[D-Heart User Manual](https://www.intermedical.co.uk/wp-content/uploads/2020/08/d-heart_usermanual.pdf) — Contains electrode placement instructions, recording limits, and supported export formats (PDF, SCP).
+:::
 
-During the process of extracting data from the device, my colleague, who is a Data Scientist, discovered that we could connect to the device via Bluetooth using the bleak Python library. At this point, I thoroughly reviewed the technical documentation (D-HEART Bluetooth LE Protocol Description) and analyzed the format in which the data was transmitted via BLE (Bluetooth Low Energy).
+During the process of extracting data from the device, my colleague, who is a Data Scientist, discovered that we could connect to the device via Bluetooth using the `bleak` Python library. At this point, I thoroughly reviewed the technical documentation (D-HEART Bluetooth LE Protocol Description) and analyzed the format in which the data was transmitted via BLE (Bluetooth Low Energy).
 
-![Example of Data Extracted from Device](data_w1.png)
+![Raw BLE data successfully extracted from the ECG device into Python](data_w1.png){#fig-ble-data fig-alt="Screenshot showing raw BLE data extracted from the ECG device"}
 
-Based on the technical data at hand and the basic connection structure created by my colleague, I prepared a comprehensive script with LLM support. By running this script, I successfully transferred the raw data to the Python environment; this work allowed us to exceed the 60-second recording limit specified in the user guide, significantly increasing our data depth for future analyses. Although this task was not directly part of my job description, I chose to engage in this technical process to better understand the analysis process and save time.
+Based on the technical data at hand and the basic connection structure created by my colleague, I prepared a comprehensive script with LLM support. By running this script, I successfully transferred the raw data to the Python environment; this work allowed us to exceed the **60-second recording limit** specified in the user guide, significantly increasing our data depth for future analyses.
+
+::: {.callout-tip}
+## Key Achievement
+Although this task was not directly part of my job description, I chose to engage in this technical process to better understand the analysis process and save time.
+:::
 
 
 ## Research & Collaboration
 
 ### ECG Signal Processing
-I also researched how ECG signals are obtained and the signal processing stages. During my research, I found a PDF copy of the book titled **“ECG Signal Processing, Classification and Interpretation”** published by Springer and started reading it.
+
+I also researched how ECG signals are obtained and the signal processing stages. During my research, I found a PDF copy of the book titled **"ECG Signal Processing, Classification and Interpretation"** published by Springer and started reading it.
+
 You can access the notes I took during my reading and later shared with my team members here: [Typst Project](https://typst.app/project/r4Y2QpciRMSyTwUPcHWOik)
+
 In addition to all this, I reviewed the device's user manual and shared its features for recording ECG signals with my team members via the Discord channel we use for communication.
 
-![ECG Device Characteristics](discord_w1.png)
+![ECG device characteristics shared with the team on Discord](discord_w1.png){#fig-discord fig-alt="Discord message showing ECG device recording features"}
 
 ### Client Presentation & Clinical Insights
+
 My colleague Loïc and I worked on the section about us for the presentation to the client. Based on my experience as a healthcare professional in my previous career and my current research, I shared with him the clinical information on what diagnoses can be obtained by analyzing ECG signals. We synthesized this technical and medical information and added it to the client presentation.
 
+
 ## What skills does this demonstrate?
+
 The activities I completed this week match the following engineering competencies:
 
-### Data & Computer Science Engineering Competencies
+::: {.panel-tabset}
 
-- Technical Proficiency: I analyzed the device's technical protocol (D-HEART BLE Protocol). Using an LLM, I developed a Python script to extract raw data from the device.
+### Technical Skills
 
-- Toolchain Utilization: I used Quarto and Typst for my portfolio and documentation. This helped me connect my code with my written reports effectively.
+| Competency | Evidence |
+|---|---|
+| **Technical Proficiency** | Analyzed the device's technical protocol (D-HEART BLE Protocol). Using an LLM, developed a Python script to extract raw data from the device. |
+| **Toolchain Utilization** | Used Quarto and Typst for portfolio and documentation, connecting code with written reports effectively. |
+| **Research & Critical Thinking** | Analyzed the user manual, found limits such as the 60-second recording limit, and designed a technical solution (BLE raw data) to bypass them. |
 
-- Research & Critical Thinking: I analyzed the user manual and found some limits, such as the 60-second recording limit. I designed a technical solution (using BLE raw data) to bypass these limits.
+### Soft Skills
 
-### Professional Skills (Soft Skills)
+| Competency | Evidence |
+|---|---|
+| **Clinical Insight Integration** | Used past experience as a healthcare professional to analyze ECG signals. Together with teammate Loïc, added medical details to the client presentation. |
+| **Collaboration & Support** | Teammate (Data Scientist) found the `bleak` library. Improved his code to analyze the data format and helped the team access the data more easily. |
+| **Comprehension** | Attended the kick-off meeting with the CEO and CTO. Analyzed the project goals, team roles, and delivery requirements. |
+| **Methodology** | Joined the Jira system created by Olivier. By registering for the team, became part of the project management and workflow. |
 
-- Clinical Insight Integration: I used my past experience as a healthcare professional to analyze ECG signals. Together with my teammate Loïc, we added medical details to the client presentation.
-
-- Collaboration & Support: My teammate (Data Scientist) found the bleak library. I improved his code to analyze the data format and helped the team access the data more easily.
-
-- Comprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.
-
-- Methodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow
+:::
 
 
 ## Reflections
 
-What worked: We successfully bypassed the device's technical limits and established a clear workflow using Jira and Discord.
+::: {.callout-note appearance="simple" icon=false}
+## What worked
+We successfully bypassed the device's technical limits and established a clear workflow using Jira and Discord.
+:::
 
-What failed / Challenges: We are experiencing some time loss due to technical uncertainties. I couldn't find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.
+::: {.callout-warning appearance="simple" icon=false}
+## What failed / Challenges
+We are experiencing some time loss due to technical uncertainties. I couldn't find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.
+:::
 
-What I learned: I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.
+::: {.callout-tip appearance="simple" icon=false}
+## What I learned
+I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.
+:::
 
-What to improve: We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.
-
-
-## Weekly Question
--  Is it really important to read the device's user manual?
-Answer : Yes, it is very important because if I didn't read it, I wouldn't know that the data could be retrieved in PDF format or how to stick the electrodes correctly. Also, seeing the 60-second limit in the manual gave us the idea to look for a better way like the BLE script
--  Why did you deal with technical documents and script writing even though it wasn't part of your job description?
-Answer : I wanted to understand where the data comes from and how it is created for my future analysis. Learning this now will help me save time later and solve problems faster if we have errors in the data.
--  How was the collaborative environment established?
-Answer : We started using Discord for quick chats and joined the Jira system created by Olivier(Product Owner) to track our tasks. We also used Typst to create a shared space for our technical notes so everyone can see them.
+::: {.callout-important appearance="simple" icon=false}
+## What to improve
+We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.
+:::
 
 
+## Weekly Questions
+
+::: {.callout-caution collapse="true"}
+## Is it really important to read the device's user manual?
+Yes, it is very important because if I didn't read it, I wouldn't know that the data could be retrieved in PDF format or how to stick the electrodes correctly. Also, seeing the 60-second limit in the manual gave us the idea to look for a better way like the BLE script.
+:::
+
+::: {.callout-caution collapse="true"}
+## Why did you deal with technical documents and script writing even though it wasn't part of your job description?
+I wanted to understand where the data comes from and how it is created for my future analysis. Learning this now will help me save time later and solve problems faster if we have errors in the data.
+:::
+
+::: {.callout-caution collapse="true"}
+## How was the collaborative environment established?
+We started using Discord for quick chats and joined the Jira system created by Olivier (Product Owner) to track our tasks. We also used Typst to create a shared space for our technical notes so everyone can see them.
+:::

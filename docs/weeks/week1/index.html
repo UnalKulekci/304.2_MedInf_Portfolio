@@ -348,13 +348,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ecg-signal-processing" id="toc-ecg-signal-processing" class="nav-link" data-scroll-target="#ecg-signal-processing">ECG Signal Processing</a></li>
   <li><a href="#client-presentation-clinical-insights" id="toc-client-presentation-clinical-insights" class="nav-link" data-scroll-target="#client-presentation-clinical-insights">Client Presentation &amp; Clinical Insights</a></li>
   </ul></li>
-  <li><a href="#what-skills-does-this-demonstrate" id="toc-what-skills-does-this-demonstrate" class="nav-link" data-scroll-target="#what-skills-does-this-demonstrate">What skills does this demonstrate?</a>
-  <ul class="collapse">
-  <li><a href="#data-computer-science-engineering-competencies" id="toc-data-computer-science-engineering-competencies" class="nav-link" data-scroll-target="#data-computer-science-engineering-competencies">Data &amp; Computer Science Engineering Competencies</a></li>
-  <li><a href="#professional-skills-soft-skills" id="toc-professional-skills-soft-skills" class="nav-link" data-scroll-target="#professional-skills-soft-skills">Professional Skills (Soft Skills)</a></li>
-  </ul></li>
+  <li><a href="#what-skills-does-this-demonstrate" id="toc-what-skills-does-this-demonstrate" class="nav-link" data-scroll-target="#what-skills-does-this-demonstrate">What skills does this demonstrate?</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
-  <li><a href="#weekly-question" id="toc-weekly-question" class="nav-link" data-scroll-target="#weekly-question">Weekly Question</a></li>
+  <li><a href="#weekly-questions" id="toc-weekly-questions" class="nav-link" data-scroll-target="#weekly-questions">Weekly Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -399,30 +395,67 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>On the first day of the week, I attended a presentation about the general outline of the project we will be undertaking and information about the team (Team C, client, project scope, timeline). The next day, I met with the team, CEO, CTO, and other members. Later that day, it was determined which team I would be working on and with whom. Within the team, I took on the roles of <strong>Data Scientist</strong> and <strong>Data Analyst</strong>; in the following weeks, I also took on the roles of <strong>Scrum Master</strong> and <strong>Product Owner</strong>. I hope to better learn the Scrum methodology by applying my theoretical knowledge in practice.</p>
+<p>On the first day of the week, I attended a presentation about the general outline of the project we will be undertaking and information about the team (Team C, client, project scope, timeline). The next day, I met with the team, CEO, CTO, and other members.</p>
+<p>Later that day, it was determined which team I would be working on and with whom. Within the team, I took on the roles of <strong>Data Scientist</strong> and <strong>Data Analyst</strong>; in the following weeks, I also took on the roles of <strong>Scrum Master</strong> and <strong>Product Owner</strong>. I hope to better learn the Scrum methodology by applying my theoretical knowledge in practice.</p>
 </section>
 <section id="device-setup-and-findings" class="level2">
 <h2 class="anchored" data-anchor-id="device-setup-and-findings">Device Setup and Findings</h2>
-<p>During the week, the <strong>ECG device</strong> required to carry out the project was procured. After receiving the device, I tested it on myself to examine how it worked and how it recorded data. I also read the device’s user manual and verbally shared the information that we could only retrieve data from the device in PDF and SCP formats with my other team members during a meeting. Subsequently, my team members in the <strong>Capteur</strong> team obtained the technical documentation for the device by contacting the CTO.</p>
-<p>User Manual Link: <a href="https://www.intermedical.co.uk/wp-content/uploads/2020/08/d-heart_usermanual.pdf">D-Heart User Manual</a></p>
-<p>During the process of extracting data from the device, my colleague, who is a Data Scientist, discovered that we could connect to the device via Bluetooth using the bleak Python library. At this point, I thoroughly reviewed the technical documentation (D-HEART Bluetooth LE Protocol Description) and analyzed the format in which the data was transmitted via BLE (Bluetooth Low Energy).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="data_w1.png" class="img-fluid figure-img"></p>
-<figcaption>Example of Data Extracted from Device</figcaption>
+<p>During the week, the <strong>ECG device</strong> required to carry out the project was procured. After receiving the device, I tested it on myself to examine how it worked and how it recorded data.</p>
+<p>I also read the device’s user manual and verbally shared the information that we could only retrieve data from the device in PDF and SCP formats with my other team members during a meeting. Subsequently, my team members in the <strong>Capteur</strong> team obtained the technical documentation for the device by contacting the CTO.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Useful Resource
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://www.intermedical.co.uk/wp-content/uploads/2020/08/d-heart_usermanual.pdf">D-Heart User Manual</a> — Contains electrode placement instructions, recording limits, and supported export formats (PDF, SCP).</p>
+</div>
+</div>
+<p>During the process of extracting data from the device, my colleague, who is a Data Scientist, discovered that we could connect to the device via Bluetooth using the <code>bleak</code> Python library. At this point, I thoroughly reviewed the technical documentation (D-HEART Bluetooth LE Protocol Description) and analyzed the format in which the data was transmitted via BLE (Bluetooth Low Energy).</p>
+<div id="fig-ble-data" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Screenshot showing raw BLE data extracted from the ECG device">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ble-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="data_w1.png" class="img-fluid figure-img" alt="Screenshot showing raw BLE data extracted from the ECG device">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ble-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Raw BLE data successfully extracted from the ECG device into Python
+</figcaption>
 </figure>
 </div>
-<p>Based on the technical data at hand and the basic connection structure created by my colleague, I prepared a comprehensive script with LLM support. By running this script, I successfully transferred the raw data to the Python environment; this work allowed us to exceed the 60-second recording limit specified in the user guide, significantly increasing our data depth for future analyses. Although this task was not directly part of my job description, I chose to engage in this technical process to better understand the analysis process and save time.</p>
+<p>Based on the technical data at hand and the basic connection structure created by my colleague, I prepared a comprehensive script with LLM support. By running this script, I successfully transferred the raw data to the Python environment; this work allowed us to exceed the <strong>60-second recording limit</strong> specified in the user guide, significantly increasing our data depth for future analyses.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key Achievement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although this task was not directly part of my job description, I chose to engage in this technical process to better understand the analysis process and save time.</p>
+</div>
+</div>
 </section>
 <section id="research-collaboration" class="level2">
 <h2 class="anchored" data-anchor-id="research-collaboration">Research &amp; Collaboration</h2>
 <section id="ecg-signal-processing" class="level3">
 <h3 class="anchored" data-anchor-id="ecg-signal-processing">ECG Signal Processing</h3>
-<p>I also researched how ECG signals are obtained and the signal processing stages. During my research, I found a PDF copy of the book titled <strong>“ECG Signal Processing, Classification and Interpretation”</strong> published by Springer and started reading it. You can access the notes I took during my reading and later shared with my team members here: <a href="https://typst.app/project/r4Y2QpciRMSyTwUPcHWOik">Typst Project</a> In addition to all this, I reviewed the device’s user manual and shared its features for recording ECG signals with my team members via the Discord channel we use for communication.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="discord_w1.png" class="img-fluid figure-img"></p>
-<figcaption>ECG Device Characteristics</figcaption>
+<p>I also researched how ECG signals are obtained and the signal processing stages. During my research, I found a PDF copy of the book titled <strong>“ECG Signal Processing, Classification and Interpretation”</strong> published by Springer and started reading it.</p>
+<p>You can access the notes I took during my reading and later shared with my team members here: <a href="https://typst.app/project/r4Y2QpciRMSyTwUPcHWOik">Typst Project</a></p>
+<p>In addition to all this, I reviewed the device’s user manual and shared its features for recording ECG signals with my team members via the Discord channel we use for communication.</p>
+<div id="fig-discord" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Discord message showing ECG device recording features">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-discord-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="discord_w1.png" class="img-fluid figure-img" alt="Discord message showing ECG device recording features">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discord-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: ECG device characteristics shared with the team on Discord
+</figcaption>
 </figure>
 </div>
 </section>
@@ -434,38 +467,177 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-skills-does-this-demonstrate" class="level2">
 <h2 class="anchored" data-anchor-id="what-skills-does-this-demonstrate">What skills does this demonstrate?</h2>
 <p>The activities I completed this week match the following engineering competencies:</p>
-<section id="data-computer-science-engineering-competencies" class="level3">
-<h3 class="anchored" data-anchor-id="data-computer-science-engineering-competencies">Data &amp; Computer Science Engineering Competencies</h3>
-<ul>
-<li><p>Technical Proficiency: I analyzed the device’s technical protocol (D-HEART BLE Protocol). Using an LLM, I developed a Python script to extract raw data from the device.</p></li>
-<li><p>Toolchain Utilization: I used Quarto and Typst for my portfolio and documentation. This helped me connect my code with my written reports effectively.</p></li>
-<li><p>Research &amp; Critical Thinking: I analyzed the user manual and found some limits, such as the 60-second recording limit. I designed a technical solution (using BLE raw data) to bypass these limits.</p></li>
-</ul>
-</section>
-<section id="professional-skills-soft-skills" class="level3">
-<h3 class="anchored" data-anchor-id="professional-skills-soft-skills">Professional Skills (Soft Skills)</h3>
-<ul>
-<li><p>Clinical Insight Integration: I used my past experience as a healthcare professional to analyze ECG signals. Together with my teammate Loïc, we added medical details to the client presentation.</p></li>
-<li><p>Collaboration &amp; Support: My teammate (Data Scientist) found the bleak library. I improved his code to analyze the data format and helped the team access the data more easily.</p></li>
-<li><p>Comprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.</p></li>
-<li><p>Methodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow</p></li>
-</ul>
-</section>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Technical Skills</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Soft Skills</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Competency</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Technical Proficiency</strong></td>
+<td>Analyzed the device’s technical protocol (D-HEART BLE Protocol). Using an LLM, developed a Python script to extract raw data from the device.</td>
+</tr>
+<tr class="even">
+<td><strong>Toolchain Utilization</strong></td>
+<td>Used Quarto and Typst for portfolio and documentation, connecting code with written reports effectively.</td>
+</tr>
+<tr class="odd">
+<td><strong>Research &amp; Critical Thinking</strong></td>
+<td>Analyzed the user manual, found limits such as the 60-second recording limit, and designed a technical solution (BLE raw data) to bypass them.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Competency</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clinical Insight Integration</strong></td>
+<td>Used past experience as a healthcare professional to analyze ECG signals. Together with teammate Loïc, added medical details to the client presentation.</td>
+</tr>
+<tr class="even">
+<td><strong>Collaboration &amp; Support</strong></td>
+<td>Teammate (Data Scientist) found the <code>bleak</code> library. Improved his code to analyze the data format and helped the team access the data more easily.</td>
+</tr>
+<tr class="odd">
+<td><strong>Comprehension</strong></td>
+<td>Attended the kick-off meeting with the CEO and CTO. Analyzed the project goals, team roles, and delivery requirements.</td>
+</tr>
+<tr class="even">
+<td><strong>Methodology</strong></td>
+<td>Joined the Jira system created by Olivier. By registering for the team, became part of the project management and workflow.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section>
 <section id="reflections" class="level2">
 <h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
-<p>What worked: We successfully bypassed the device’s technical limits and established a clear workflow using Jira and Discord.</p>
-<p>What failed / Challenges: We are experiencing some time loss due to technical uncertainties. I couldn’t find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.</p>
-<p>What I learned: I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.</p>
-<p>What to improve: We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What worked
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We successfully bypassed the device’s technical limits and established a clear workflow using Jira and Discord.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>What failed / Challenges
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We are experiencing some time loss due to technical uncertainties. I couldn’t find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What I learned
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>What to improve
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.</p>
+</div>
+</div>
 </section>
-<section id="weekly-question" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-question">Weekly Question</h2>
-<ul>
-<li>Is it really important to read the device’s user manual? Answer : Yes, it is very important because if I didn’t read it, I wouldn’t know that the data could be retrieved in PDF format or how to stick the electrodes correctly. Also, seeing the 60-second limit in the manual gave us the idea to look for a better way like the BLE script</li>
-<li>Why did you deal with technical documents and script writing even though it wasn’t part of your job description? Answer : I wanted to understand where the data comes from and how it is created for my future analysis. Learning this now will help me save time later and solve problems faster if we have errors in the data.</li>
-<li>How was the collaborative environment established? Answer : We started using Discord for quick chats and joined the Jira system created by Olivier(Product Owner) to track our tasks. We also used Typst to create a shared space for our technical notes so everyone can see them.</li>
-</ul>
+<section id="weekly-questions" class="level2">
+<h2 class="anchored" data-anchor-id="weekly-questions">Weekly Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Is it really important to read the device’s user manual?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Yes, it is very important because if I didn’t read it, I wouldn’t know that the data could be retrieved in PDF format or how to stick the electrodes correctly. Also, seeing the 60-second limit in the manual gave us the idea to look for a better way like the BLE script.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Why did you deal with technical documents and script writing even though it wasn’t part of your job description?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>I wanted to understand where the data comes from and how it is created for my future analysis. Learning this now will help me save time later and solve problems faster if we have errors in the data.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>How was the collaborative environment established?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We started using Discord for quick chats and joined the Jira system created by Olivier (Product Owner) to track our tasks. We also used Typst to create a shared space for our technical notes so everyone can see them.</p>
+</div>
+</div>
+</div>
 
 
 </section>
