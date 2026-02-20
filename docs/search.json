@@ -158,7 +158,18 @@
     "href": "weeks/week1/index.html#what-skills-does-this-demonstrate",
     "title": "Week 1: Project Setup & Meetings",
     "section": "What skills does this demonstrate?",
-    "text": "What skills does this demonstrate?\nThe activities I completed this week match the following engineering competencies:\n\nData & Computer Science Engineering Competencies\n\nTechnical Proficiency: I analyzed the device’s technical protocol (D-HEART BLE Protocol). Using an LLM, I developed a Python script to extract raw data from the device.\nToolchain Utilization: I used Quarto and Typst for my portfolio and documentation. This helped me connect my code with my written reports effectively.\nResearch & Critical Thinking: I analyzed the user manual and found some limits, such as the 60-second recording limit. I designed a technical solution (using BLE raw data) to bypass these limits.\n\n\n\nProfessional Skills (Soft Skills)\n\nClinical Insight Integration: I used my past experience as a healthcare professional to analyze ECG signals. Together with my teammate Loïc, we added medical details to the client presentation.\nCollaboration & Support: My teammate (Data Scientist) found the bleak library. I improved his code to analyze the data format and helped the team access the data more easily.\nComprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.\n\nMethodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow",
+    "text": "What skills does this demonstrate?\nThe activities I completed this week match the following engineering competencies:\n\nData & Computer Science Engineering Competencies\n\nTechnical Proficiency: I analyzed the device’s technical protocol (D-HEART BLE Protocol). Using an LLM, I developed a Python script to extract raw data from the device.\nToolchain Utilization: I used Quarto and Typst for my portfolio and documentation. This helped me connect my code with my written reports effectively.\nResearch & Critical Thinking: I analyzed the user manual and found some limits, such as the 60-second recording limit. I designed a technical solution (using BLE raw data) to bypass these limits.\n\n\n\nProfessional Skills (Soft Skills)\n\nClinical Insight Integration: I used my past experience as a healthcare professional to analyze ECG signals. Together with my teammate Loïc, we added medical details to the client presentation.\nCollaboration & Support: My teammate (Data Scientist) found the bleak library. I improved his code to analyze the data format and helped the team access the data more easily.\nComprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.\nMethodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow",
+    "crumbs": [
+      "Weeks",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week1/index.html#reflections",
+    "href": "weeks/week1/index.html#reflections",
+    "title": "Week 1: Project Setup & Meetings",
+    "section": "Reflections",
+    "text": "Reflections\nWhat worked: We successfully bypassed the device’s technical limits and established a clear workflow using Jira and Discord.\nWhat failed / Challenges: We are experiencing some time loss due to technical uncertainties. I couldn’t find enough information online about the specific relationship between ECG signals and sleep studies. This lack of information makes it difficult to define our final goals right now.\nWhat I learned: I realized that technical documentation is not enough; we also need expert clinical knowledge to understand the data.\nWhat to improve: We have a meeting with an expert next week to ask our questions. In the future, I believe we should plan these expert meetings much earlier in the project to avoid losing time at the beginning.",
     "crumbs": [
       "Weeks",
       "Week 1"
@@ -169,7 +180,7 @@
     "href": "weeks/week1/index.html#weekly-question",
     "title": "Week 1: Project Setup & Meetings",
     "section": "Weekly Question",
-    "text": "Weekly Question\n\nIs it really important to read the device’s user manual?\nWhy did you deal with technical documents and script writing even though it wasn’t part of your job description?\nHow was the collaborative environment established?",
+    "text": "Weekly Question\n\nIs it really important to read the device’s user manual? Answer : Yes, it is very important because if I didn’t read it, I wouldn’t know that the data could be retrieved in PDF format or how to stick the electrodes correctly. Also, seeing the 60-second limit in the manual gave us the idea to look for a better way like the BLE script\nWhy did you deal with technical documents and script writing even though it wasn’t part of your job description? Answer : I wanted to understand where the data comes from and how it is created for my future analysis. Learning this now will help me save time later and solve problems faster if we have errors in the data.\nHow was the collaborative environment established? Answer : We started using Discord for quick chats and joined the Jira system created by Olivier(Product Owner) to track our tasks. We also used Typst to create a shared space for our technical notes so everyone can see them.",
     "crumbs": [
       "Weeks",
       "Week 1"

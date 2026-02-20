@@ -55,7 +55,7 @@ The activities I completed this week match the following engineering competencie
 
 - Comprehension: I attended the kick-off meeting with the CEO and CTO. I analyzed the project goals, team roles, and delivery requirements.
 
-Methodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow
+- Methodology: I joined the Jira system created by Olivier. By registering for the team, I became part of the project management and workflow
 
 
 ## Reflections
